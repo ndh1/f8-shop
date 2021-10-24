@@ -135,6 +135,26 @@
     background-color: var(--white-color);
     right: 0;
     border: 1px solid #d3d3d3;
+    cursor: default;
+    animation: headerNotifyGrowth ease-in 0.2s;
+    transform-origin: calc(100% - 20px) top ;
+    display: none;
+}
+.header__navbar-item--has-notify:hover .header__notify
+{
+    display: block;
+}
+
+@keyframes headerNotifyGrowth
+{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 .header__notify-header{
     height: 40px;
@@ -183,8 +203,8 @@
 
 .header__notify-name{
     display: block;
-    color: var(--black-color);
-    font-size: 1.4rem;
+    color: var(--text-color);
+    font-size: 1.8rem;
     font-weight: 400;
 }
 
@@ -193,16 +213,21 @@
     font-size: 1.2rem;
     line-height: 2.5rem;
     color: #756f6e;
+    margin-top: 4px;
 }
 .header__notify-footer{
-    text-align: center;
-    
+    display: flex;
 }
 
 .header__notify-footer-btn{
     text-decoration: none;
     color: var(--text-color);
-    padding: 4px 16px;
+    padding: 8px 0px;
+    margin: auto;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
 }
 
 
