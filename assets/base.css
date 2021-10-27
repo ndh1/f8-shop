@@ -4,7 +4,8 @@
     --black-color: #000;
     --text-color: #333;
     --primary-color: #ee4d2d;
-    
+    --border-color: #bdbdbd;
+
 }
 
 * 
@@ -45,4 +46,10 @@ html
     {
         opacity: 1;
     }
+}
+
+/*Btn style*/
+.btn{
+    min-width: 142px;
+    min-height: 36px;
 }
