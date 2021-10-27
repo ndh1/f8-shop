@@ -36,6 +36,14 @@ html
     display: flex;
     flex-wrap: wrap;
 }
+.modal__body{
+
+    margin: auto;
+    background-color: var(--white-color);
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+}
 
 /*Animation*/
 @keyframes FadeIn {
@@ -51,5 +59,9 @@ html
 /*Btn style*/
 .btn{
     min-width: 142px;
-    min-height: 36px;
+    min-height: 34px;
 }
+.btn.btn--normal:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
