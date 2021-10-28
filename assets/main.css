@@ -260,6 +260,7 @@
     bottom: 0;
     left: 0;
     display: flex;
+    animation: FadeIn linear 0.2s;
 }
 .modal__overplay
 {
@@ -267,6 +268,7 @@
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
+    
 }
 
 .modal__inner{
@@ -289,6 +291,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 10px;
 }
 .auth-form__heading{
     font-size: 2.2rem;
@@ -347,6 +350,7 @@
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    line-height: 1.6rem;
 }
 .btn--size-s{
     height: 32px;
@@ -390,6 +394,25 @@
     color: var(--text-color);
 }
 .auth-form__social-title{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 0 36px;
+}
+.auth-form__help{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.auth-form__help-link{
+    font-size: 1.4rem;
+    color: #666;
+    text-decoration: none;
+}
+.auth-form__help-separate{
+    display: block;
+    border-left: 1px solid #eaeaea;
+    height: 18px;
+    margin: 0 16px ;
+}
+.auth-form__help-link-forgot{
+    color: var(--primary-color);
 }
