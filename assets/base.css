@@ -6,6 +6,9 @@
     --primary-color: #ee4d2d;
     --border-color: #bdbdbd;
 
+    --header-height:120px;
+    --navbar-height:34px;
+    --header-with-search-height: cacl(var(--header-height) - var(--navbar-height))
 }
 
 * 
@@ -75,4 +78,6 @@ html
 .btn.btn--normal:hover{
     background-color: rgba(0, 0, 0, 0.05);
 }
+
+
 
