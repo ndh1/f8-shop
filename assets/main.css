@@ -48,7 +48,7 @@
 
 .header__navbar-user-name{
     font-size: 1.4rem;
-    margin-left: 8px;
+    margin-left: 4px;
     font-weight: 400;
 }
 .header__navbar-user-menu{
@@ -67,6 +67,9 @@
 
 .header__navbar-user-item{
 
+}
+.header__navbar-user-item--separate{
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .header__navbar-user-item a{
@@ -107,7 +110,7 @@
 .header__navbar-item-link
 {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
@@ -118,6 +121,11 @@
 .header__navbar-icon-link{
     display: flex;
     align-items: center;
+    text-decoration: none;
+}
+
+.header__navbar-icon-link:first-child{
+    
 }
 
 .header__navbar-item:hover,
@@ -217,13 +225,14 @@
     width: 404px;
     background-color: var(--white-color);
     right: 0;
-    border: 1px solid #d3d3d3;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: default;
     animation: headerNotifyGrowth ease-in 0.2s;
-    transform-origin: calc(100% - 20px) top ;
+    transform-origin: calc(100% - 32px) top ;
     display: none;
     will-change: opacity,transform;
     z-index: 1;
+    border-radius: 2px;
 }
 
 .header__notify::before{
@@ -513,6 +522,10 @@
 .header-logo{
     width: 200px;
 }
+.header__logo-link{
+    text-decoration: none;
+    color: transparent;
+}
 
 .header__logo-img{
     width: 150px;
@@ -666,7 +679,7 @@
 .header__search-option{
     position: absolute;
     right: 0;
-    top: 120%;
+    top: calc(100% + 6px);
     width: 130px;
     list-style: none;
     box-shadow: 0 1px 1px #ccc;
@@ -674,6 +687,7 @@
     border-radius: 2px;
     animation: FadeIn ease-in 0.2s;
     display: none;
+
 }
 .header__search-option::after
 {
