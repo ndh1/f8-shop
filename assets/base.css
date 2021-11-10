@@ -92,6 +92,19 @@ html
 .btn{
     min-width: 142px;
     min-height: 34px;
+    text-decoration: none;
+    border:none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    line-height: 1.6rem;
+    background-color: var(--white-color);
+    display: inline-flex;
 }
 .btn.btn--normal:hover{
     background-color: rgba(0, 0, 0, 0.05);
