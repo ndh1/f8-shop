@@ -96,7 +96,7 @@ html
     border:none;
     border-radius: 2px;
     font-size: 1.5rem;
-    padding: 0;
+    padding: 0 12px;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -110,5 +110,57 @@ html
     background-color: rgba(0, 0, 0, 0.05);
 }
 
+/* Selection */
+.select-input{
+    position: relative;
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    
+}
 
+.select-input__label
+{
+    font-size: 1.4rem;
+}
 
+.select-input__icon
+{
+    font-size: 1.4rem;
+    color: rgb(131 , 131 ,131);
+    position: relative;
+    top: 1px;
+}
+.select-input__list{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 21px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    list-style: none;
+    padding: 10px 16px;
+    display: none;
+    
+}
+.select-input__link{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+   
+
+}
+.select-input:hover .select-input__list{
+    display: block;
+}
+.select-input__link:hover{
+    color: var(--primary-color);
+}
