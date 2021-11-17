@@ -5,7 +5,8 @@
     --text-color: #333;
     --primary-color: #ee4d2d;
     --border-color: #bdbdbd;
-
+    --star-gold-color:#ffce3e;
+    
     --header-height:120px;
     --navbar-height:34px;
     --header-with-search-height: cacl(var(--header-height) - var(--navbar-height))
