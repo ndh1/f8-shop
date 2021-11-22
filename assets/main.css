@@ -54,7 +54,7 @@
 .header__navbar-user-menu{
     position: absolute;
     padding-left: 0;
-    top: calc(100% + 4px);
+    top: calc(100% + 8px);
     right: 0;
     background-color: var(--white-color);
     border-radius: 2px;
@@ -570,6 +570,7 @@
     box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
     display: none;
     cursor: default;
+    z-index: 1;
     
 }
 .header__cart-list--no-cart{
@@ -633,6 +634,7 @@
 }
 .header__search-select:hover .header__search-option{
     display: block;
+    z-index: 1;
 }
 .header__search-select-label{
     font-size: 1.4rem;
@@ -733,6 +735,7 @@
     box-shadow: 0 0 2px #666;
     display: none;
     overflow: hidden;
+    z-index: 1;
 }
 
 .header__search-history-heading{
@@ -774,6 +777,9 @@
 .header__cart-list-item{
     padding-left: 0;
     list-style: none;
+    height: 56vh;
+    overflow-y: auto;
+    
 }
 .header__cart-item{
     display: flex;
