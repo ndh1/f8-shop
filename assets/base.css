@@ -153,7 +153,7 @@ html
     list-style: none;
     padding: 10px 16px;
     display: none;
-    
+    z-index: 1;
 }
 .select-input__link{
     font-size: 1.4rem;
