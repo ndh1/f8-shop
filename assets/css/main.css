@@ -777,7 +777,7 @@
 .header__cart-list-item{
     padding-left: 0;
     list-style: none;
-    height: 56vh;
+    max-height: 56vh;
     overflow-y: auto;
     
 }
@@ -883,7 +883,7 @@
 }
 
 /*App container*/
-.app__content{
+.app__container{
     background-color: #f5f5f5;
     padding-top: 36px;
 }
