@@ -1,3 +1,11 @@
+/* PC */
+@media (min-width:1024px){
+    .header__cart-wrap:hover .header__cart-list{
+        display: block;
+        animation: FadeIn ease-in 0.2s;
+        
+    }
+}
 /* Mobile & tablet */
 @media (max-width:1023px){
     .hide-on-mobile-tablet{
@@ -106,6 +114,14 @@
         width: 100px;
         
     }
+    .header__cart-checkbox:checked ~ .header__cart-list{
+        display: block;
+    }
+    /* .header__cart-wrap:hover .header__cart-list{
+        display: block;
+        animation: FadeIn ease-in 0.2s;
+        
+    } */
     .pagination-item{
         margin: 0;
     }
