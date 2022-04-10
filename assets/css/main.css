@@ -508,9 +508,11 @@
     margin: 0 8px;
     
 }
-.header__search-checkbox:checked ~.header__search{
+.header__search-checkbox:checked ~ .header__search{
     display: flex;
 }
+
+
 .header__mobile-search{
     padding: 0 12px;
     display: none;
